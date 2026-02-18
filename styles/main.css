@@ -34,12 +34,28 @@ footer {
 
 /* Стилі для заголовка */
 
-header h1 {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 400;
+header ul { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
   margin: 0;
 }
+
+header ul li {
+  padding: 0 15px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #414141;
+}
+
+header ul li a:hover {
+  color: #ff5f00;
+}
+
 /* Стилі для картки */
 
 .card {
@@ -69,10 +85,33 @@ header h1 {
   flex: 1 0 auto;
 }
 
+.card__selected {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ff5f00;  
+  border-radius: 50%;
+}
+
+.card__selected:hover {
+  color: #ff5f00;
+  background-color: #fff;
+  border: 1px solid #ff5f00;
+  box-shadow: 0 0 4px rgba(255, 102, 51, 0.5);
+}
+
 .card__label {
   position: absolute;
   top: 0px;
-  right: 0px;
+  left: 0px;
   padding: 4px 8px;
   font-weight: 400;
   font-size: 16px;
