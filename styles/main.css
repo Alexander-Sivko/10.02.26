@@ -14,6 +14,7 @@ body {
 }
 
 header {
+  display: flex;
   flex: 0 0 auto;
 }
 
@@ -34,25 +35,37 @@ footer {
 
 /* Стилі для заголовка */
 
-header ul { 
+header .logo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+}
+
+header .logo img {
+  width: 100px;
+} 
+
+header .menu {
+  display: flex;
+  align-items: center;
+}
+
+header .menu__list {
+  display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-header ul li {
-  padding: 0 15px;
+header .menu__list li {
+  padding: 15px;
 }
 
-header ul li a {
+header .menu__list li a {
   text-decoration: none;
   color: #414141;
 }
 
-header ul li a:hover {
+header .menu__list li a:hover {
   color: #ff5f00;
 }
 
